@@ -34,6 +34,20 @@ export default function Home() {
           />
         </div>
       </section>
+
+      <section
+        id="events"
+        className="wrapper my-8 flex  flex-col gap-8 md:gap-12"
+      >
+        <h2 className="text-3xl">
+          Confira alguns <span className="h2-bold">Eventos</span> <br /> em
+          nossa plataforma!
+        </h2>
+
+        <div className="flex w-full flex-col  gap-5 md:flex-row">
+          Procurar FiltroCategoria
+        </div>
+      </section>
     </>
   );
 }
