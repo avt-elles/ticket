@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -10,16 +11,27 @@ export default function Home() {
             <h1 className="h1-bold">
               Planejar, Organizar, Celebrar: Seus eventos em nossa plataforma!
             </h1>
-            <p>
+            <p className="p-regular-20 md:p-regular-24">
               Descubra a maneira mais fácil e eficiente de planejar, organizar e
-              aproveitar seus eventos. Crie momentos inesquecíveis, celebre suas
-              conquistas e comemora com quem você mais ama. Tudo isso em um só
-              lugar, com a praticidade e segurança que você merece. Venha fazer
-              parte desta experiência!
+              aproveitar seus eventos. Venha fazer parte desta experiência!
             </p>
 
-            <Button className="rounded-full"> Todos os Eventos!</Button>
+            <Button
+              asChild
+              className="button w-full sm:w-full uppercase"
+              size="lg"
+            >
+              <Link href="#events">Ver todos os Eventos!</Link>
+            </Button>
           </div>
+
+          <Image
+            src="/assets/images/hero.png"
+            alt="Pessoas celebrando"
+            width={1200}
+            height={1200}
+            className="max-h-[70vh] object-contain object-center 2xl:max-h-[50vh]"
+          />
         </div>
       </section>
     </>
