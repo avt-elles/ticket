@@ -7,19 +7,19 @@ import MobileNav from "./MobileNav";
 
 const Header = () => {
   return (
-    <header className="w-full border-0">
+    <header className="w-full border-b">
       <div className="wrapper flex itens-center justify-between">
         <Link href="/" className="w-36">
           <Image
             src="/assets/images/logo.svg"
             width={200}
             height={40}
-            alt="Ingressa.net"
+            alt="Ingressus.net"
           />
         </Link>
 
         <SignedIn>
-          <nav className="md: flex-between w-full max-w-xs">
+          <nav className="md:flex-between hidden w-full max-w-xs">
             <NavItems />
           </nav>
         </SignedIn>
